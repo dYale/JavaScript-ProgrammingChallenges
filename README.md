@@ -35,8 +35,7 @@ the repo with makersquare's. Git won't automatically pull in upstream changes fo
 you; it trusts that you'll pull them in as needed. Do so by giving Git a reference
 to makersquare's version of the repo:
 
-    git remote add upstream https://github.com/makersquare/MKS14-toy-problems.git
-
+    git remote add upstream https://github.com/makersquare/MKS16-toy-problems.git
 
 After you've done that, updating your repo is as simple as running the following:
 
