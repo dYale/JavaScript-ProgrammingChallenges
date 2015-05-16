@@ -22,10 +22,17 @@
  * result === 'foobar'; // true
  *
 */
+  
+var bind = function(func, obj) {
 
-var bind = function(
-) {
-  // TODO: Your code here
+	if(typeof func !== function){
+		console.log('wrong!');
+	} else {
+		return function(){
+		var args= array.prototype.slice.call(arguments);
+		return func.apply(obj, obj.concat.(args))
+							}
+						}
 };
 
 /*
@@ -54,6 +61,20 @@ var bind = function(
 */
 
 Function.prototype.bind = function(
+
+
+	if(typeof this !== function){
+		throw new TypeError "CONDITIONER IS BETTER!";
+	} else {
+		var that = this;
+		var internal = function(){
+		var arg = array.prototype.slice.call(arguments, 1);
+		return that.apply(obj ? obj : this,
+								arg.concat.(Array.prototype.slice.call(arguments)))
+							}
+
+	}
+	return internal;
 ) {
   // TODO: Your code here
 };
