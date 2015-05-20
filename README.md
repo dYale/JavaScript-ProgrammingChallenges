@@ -12,7 +12,7 @@ You'll find each day's toy problem in its own folder.
 Getting a Copy of the Repo
 --------------------------
 If you haven't already, fork the repository on GitHub and clone your newly created
-repo down to your computer.
+repo down to your computer. 
 
 Submitting your Solutions
 -------------------------
@@ -20,7 +20,7 @@ Submitting your Solutions
 
 Solutions are submitted via [Pull Request](https://help.github.com/articles/using-pull-requests). Follow these steps:
 
-1. From **your fork**, select `Pull Requests` and then create a `New pull request`.
+1. From **your fork**, select `Pull Requests` and then create a `New pull request`. 
 2. STOP. *Before* you `Click to create a pull request for this comparison` you must **adjust the target branch** (aka `base branch`) to be your username. Once chagned, the pull-request heading should look like this:
 
   > makersquare:username ... username:master
@@ -36,7 +36,6 @@ you; it trusts that you'll pull them in as needed. Do so by giving Git a referen
 to makersquare's version of the repo:
 
     git remote add upstream https://github.com/makersquare/MKS16-toy-problems.git
-
 
 After you've done that, updating your repo is as simple as running the following:
 
