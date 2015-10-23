@@ -13,11 +13,11 @@ var longestPalindrome = function(string) {
 
 	for(var i = 0, length = arrStr.length; i < length; i++){
 
-		for(var j = arrStr.length - 1; j > i; j--){
+		for(var j = arrStr.length - 1; j > i; j--){ 
 			if(arrStr[i] === arrStr[j]){
 
-				if(isPalindrome(arrStr.slice( i , j+1))){	
-					var currentArr = arrStr.slice( i , j+1)
+				if(isPalindrome(arrStr.slice( i , j + 1))){	
+					var currentArr = arrStr.slice( i , j + 1)
 
 					if(longestArr.length < currentArr.length){
 						longestArr = currentArr; 
@@ -36,7 +36,6 @@ function isPalindrome(arr){
 	var joinedArr = arr.join("");
 	var revArr = arr.reverse().join("")
 	return joinedArr === revArr;
-
 }
 
 

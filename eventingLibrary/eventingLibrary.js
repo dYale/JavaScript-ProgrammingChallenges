@@ -33,9 +33,8 @@ var mixEvents = function(obj) {
 
 	obj.trigger = function(event){
 		if(events[event]){
-			var args = Array.prototype.slice.call(arguments, 1);
 			events[event].forEach(function(callback){
-				callback.apply(obj, args);
+				callback.apply(obj, Array.prototype.slice.call(arguments, 1));
 			})
 		}
 	}
